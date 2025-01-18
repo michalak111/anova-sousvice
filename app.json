@@ -24,6 +24,9 @@
       "permissions": [
         "android.permission.BLUETOOTH",
         "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
         "android.permission.BLUETOOTH_CONNECT"
       ],
       "package": "com.anonymous.anovasousvide"
@@ -33,15 +36,25 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "react-native-ble-plx"
-      ],
-      "expo-secure-store"
-    ],
+    "plugins": ["expo-router", ["react-native-ble-plx"], "expo-secure-store"],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "858f2d77-4266-4f96-bdeb-fca463c5696e"
+      }
+    },
+    "owner": "michalak111-org",
+    "runtimeVersion": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/858f2d77-4266-4f96-bdeb-fca463c5696e",
+      "requestHeaders": {
+        "main": "main"
+      }
     }
   }
 }

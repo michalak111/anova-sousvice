@@ -8,7 +8,7 @@ import { useThemeColor } from "@/hooks/useThemeColor";
 export default function IndexHome() {
   return (
     <View style={{ padding: 16, gap: 16 }}>
-      <Text>V1 - 18.01 13:20</Text>
+      <Text>V1 - 13:47</Text>
       <Card href={"/home/guides"} title={"Guides"} />
       <Card href={"/home/history"} title={"History"} />
     </View>
